@@ -21,7 +21,11 @@ resource "aws_instance" "yourec2" {
 }
 
 variable "access_key"{ }
-variable "secret_key"{ }
+variable "secret_key" {
+  type    = string
+  default = "your_secret_key_value"
+}
+
 variable "region_key"{
   default ="us-east-1"
 }
